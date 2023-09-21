@@ -14,7 +14,7 @@ let playSound = () => {
   }
 };
 
-document.body.addEventListener("click", playSound);
+document.getElementById("BVer").addEventListener("click",playSound);
 
 window.addEventListener('focus', () => {
   document.title = Titulo;
