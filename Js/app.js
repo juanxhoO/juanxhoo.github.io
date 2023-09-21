@@ -6,7 +6,7 @@ window.addEventListener('blur', () => {
 })
 
 //Agregando Audio de Fondo
-let audio = new Audio("flores_amarillas.ogg");
+let audio = new Audio("flores_amarillas.mp3");
 
 let playSound = () => {
   if (audio.paused) {
@@ -14,13 +14,7 @@ let playSound = () => {
   }
 };
 
-
-
-document.getElementById("BVer").addEventListener("click",
-function playAudio(){
-  document.getElementById("audio").play();
-  console.log("test")
-});
+document.getElementById("BVer").addEventListener("click",playSound);
 
 window.addEventListener('focus', () => {
   document.title = Titulo;
