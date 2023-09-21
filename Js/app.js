@@ -4,14 +4,13 @@ window.addEventListener('blur', () => {
   Titulo = document.title;
   document.title = "Te amo mi amor Hermosa";
 })
+
+//Agregando Audio de Fondo
 let audio = new Audio("flores_amarillas.ogg");
 
 let playSound = () => {
   if (audio.paused) {
     audio.play();
-  } else {
-    // Audio is already playing, you can choose to pause it or do nothing
-    // audio.pause();
   }
 };
 
@@ -183,13 +182,16 @@ function CrearVarias() {
 
 
     if (window.innerWidth > 420) {
-      canvas.width = window.innerWidth/2;
+      canvas.width = window.innerWidth / 2;
+      canvas.height = window.innerHeight;
+
     }
     else {
       canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight / 2 + 100;
+
     }
 
-    canvas.height = window.innerHeight;
 
     /**
      * Your drawings need to be inside this function otherwise they will be reset when 

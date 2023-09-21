@@ -7,6 +7,7 @@ body {
 
 p{
  font-size: 2rem;   
+ font-weight: bold;
 }
 h1 {
     text-align: center;
@@ -26,6 +27,7 @@ canvas {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
     margin: 0;
 }
 
@@ -42,20 +44,17 @@ canvas {
 
 .Texto h2 {
     color: #ffffff;
-    font-size: 50px;
-}
-
-#B12 {
-    margin-left: 30px;
+    font-size: 2.5rem;
+    margin-top: 0;
 }
 
 .Button{
     font-family: monospace;
     font-size: 2rem;
     transition-duration: 0.2s;
-    padding: 40px 100px;
+    padding: 40px 60px;
     border-radius: 8px;
-    background-color: greenyellow;
+    background-color: #2abd11;
     color: black;
     border: 2px solid green;
     cursor: pointer;
@@ -88,10 +87,12 @@ canvas {
 .cua{
     display: none;
     position: fixed;
+    box-sizing: border-box;
+    width: 90%;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 30px;
+    padding: 20px;
     background-color: #f9f9f9;
     border: 2px solid greenyellow;
     border-radius: 5px;
@@ -115,9 +116,14 @@ canvas {
       }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 768px) {
     body {
         background: linear-gradient(100deg, blue, purple, pink);
         background-attachment: fixed;
     }
+    .Contenedor{
+        flex-direction: column-reverse;
+    }
+
 }
+
