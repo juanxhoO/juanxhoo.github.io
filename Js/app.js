@@ -181,7 +181,7 @@ function CrearVarias() {
   function resizeCanvas() {
 
 
-    if (window.innerWidth > 420) {
+    if (window.innerWidth > 768) {
       canvas.width = window.innerWidth / 2;
       canvas.height = window.innerHeight;
 
