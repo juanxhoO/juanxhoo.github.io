@@ -204,5 +204,6 @@ function CrearVarias() {
 
   function drawStuff() {
     // do your drawing stuff here
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 })();
