@@ -14,7 +14,13 @@ let playSound = () => {
   }
 };
 
-document.getElementById("BVer").addEventListener("click",playSound);
+
+
+document.getElementById("BVer").addEventListener("click",
+function playAudio(){
+  document.getElementById("audio").play();
+  console.log("test")
+});
 
 window.addEventListener('focus', () => {
   document.title = Titulo;
